@@ -377,7 +377,7 @@ btnReglas.addEventListener(
 
                 <p>
                     Cada picada dispone de
-                    <strong>6 espacios</strong>
+                    <strong>5 espacios</strong>
                     para colocar cartas.
                 </p>
 
@@ -570,7 +570,7 @@ function mostrarLobby(partida) {
         <p class="esperando">
 
             ${
-                partida.jugadores.length < 6
+                partida.jugadores.length < 5
                     ? "Esperando jugadores..."
                     : "Partida completa."
             }
@@ -1292,7 +1292,7 @@ function renderizarJuego() {
 
 
                     <div class="picadaSubtitulo">
-                        ${picada.length} / 6 elementos
+                        ${picada.length} / 5 elementos
                     </div>
 
 
@@ -1303,7 +1303,7 @@ function renderizarJuego() {
 
             for (
                 let indiceSlot = 0;
-                indiceSlot < 6;
+                indiceSlot < 5;
                 indiceSlot++
             ) {
 
