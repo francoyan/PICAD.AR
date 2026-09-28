@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "NO HAY PLATA",
+        "icono": "💸",
+        "descripcion": "Restricción presupuestaria: el grupo deberá establecer un presupuesto máximo para toda la picada o para cada ingrediente antes de comenzar las compras."
+    },
+    {
+        "id": 2,
+        "nombre": "FIESTA DE SALCHICHAS",
+        "icono": "🌭",
+        "descripcion": "Por cada ingrediente cuya base sea carne de cualquier animal, cada jugador deberá acompañarlo con una pinta."
+    },
+    {
+        "id": 3,
+        "nombre": "CELIAQUISMO",
+        "icono": "🌾",
+        "descripcion": "Cagamos muchachos, nos agarró celiaquía. Está prohibido cualquier alimento que contenga TACC (la cerveza queda excluida de esta variante genética)."
+    },
+    {
+        "id": 4,
+        "nombre": "SABORES INTERNACIONALES",
+        "icono": "✈️",
+        "descripcion": "Se debe convenir una gastronomía de alguna región o país del mundo y la picada será de dicha cocina."
+    },
+    {
+        "id": 5,
+        "nombre": "TODO AL FUEGO",
+        "icono": "🔥",
+        "descripcion": "Todo ingrediente que pueda, debe pasar por la parrilla, plancha o fuego."
+    },
+    {
+        "id": 6,
+        "nombre": "PRODUCTOS AUTÓCTONOS",
+        "icono": "🌳",
+        "descripcion": "La picada deberá incluir ingredientes propios de la región."
+    }
+]

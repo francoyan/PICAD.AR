@@ -1,0 +1,17 @@
+{
+  "name": "PICAD.AR",
+  "short_name": "PICAD.AR",
+  "description": "Juego de cartas multijugador para armar picadas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2b1b12",
+  "theme_color": "#6b4528",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}

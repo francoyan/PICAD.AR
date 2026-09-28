@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* =========================================================
+   PICAD.AR — FASE 2
+   ESTÉTICA: MADERA / CANTINA OKTOBERFEST / TCG
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --madera-oscura: #1a0f09;
+    --madera: #2b180d;
+    --madera-media: #432617;
+    --madera-clara: #69401f;
+    --ocre: #b97824;
+    --ocre-claro: #e0a848;
+    --dorado: #ffd071;
+    --crema: #ead9b8;
+    --crema-oscura: #c9b38e;
+    --texto: #fff8e9;
+    --texto-suave: #d7c3a3;
+    --sombra: rgba(0, 0, 0, .48);
+}
+
+/* =========================================================
+   CUERPO
+   ========================================================= */
+
+body {
+    min-height: 100vh;
+    padding: 24px;
+
+    color: var(--texto);
+    font-family: 'Montserrat', sans-serif;
+
+    background:
+        radial-gradient(circle at 50% -10%, #4a2b18 0%, #24150c 42%, #110a06 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.contenedor {
+    width: min(1100px, 96vw);
+    min-height: calc(100vh - 48px);
+
+    padding: 30px 34px 34px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg, rgba(255,255,255,.025), transparent 30%),
+        radial-gradient(circle at 50% 0%, #442817 0%, #302015 55%, #26170e 100%);
+
+    border: 3px solid #a86e27;
+    border-radius: 24px;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.55),
+        inset 0 0 0 1px rgba(255,208,113,.12),
+        inset 0 0 35px rgba(0,0,0,.28);
+}
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+h1 {
+    margin-bottom: 18px;
+
+    color: var(--dorado);
+
+    font-family: 'Cinzel', serif;
+    font-size: clamp(38px, 5vw, 62px);
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 2px 0 #6d4514,
+        0 6px 18px rgba(0,0,0,.45);
+}
+
+.subtitulo {
+    margin-bottom: 28px;
+    color: var(--texto-suave);
+    line-height: 1.5;
+}
+
+.contenedor h3 {
+    margin-bottom: 10px;
+    color: var(--crema);
+    letter-spacing: 2px;
+}
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+button {
+    padding: 16px 20px;
+
+    border: 0;
+    border-radius: 12px;
+
+    background: linear-gradient(#c9872d, #a8661d);
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #704515,
+        0 8px 15px rgba(0,0,0,.25);
+
+    transition:
+        transform .15s ease,
+        filter .15s ease,
+        box-shadow .15s ease;
+}
+
+button:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #704515;
+}
+
+button:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =========================================================
+   MENÚ
+   ========================================================= */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =========================================================
+   CARTA GENÉRICA / PANTALLAS PREVIAS
+   ========================================================= */
+
+.carta {
+    margin: 18px 0;
+    padding: 24px 20px;
+
+    background: linear-gradient(145deg, #493020, #2c1b11);
+
+    border: 2px solid var(--ocre);
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px var(--sombra),
+        inset 0 0 18px rgba(255,255,255,.025);
+}
+
+.iconoCarta {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 54px;
+}
+
+.iconoCarta img,
+.imagenCarta {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.carta h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.carta p {
+    margin-bottom: 10px;
+    color: var(--texto-suave);
+    line-height: 1.45;
+}
+
+.carta small {
+    color: var(--dorado);
+    font-weight: 700;
+}
+
+/* =========================================================
+   CAMPOS / LOBBY
+   ========================================================= */
+
+.campo {
+    width: 100%;
+    padding: 14px;
+
+    margin-bottom: 14px;
+
+    background: #24160e;
+    color: white;
+
+    border: 2px solid #9c6b2b;
+    border-radius: 11px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
+.campo:focus {
+    border-color: var(--ocre-claro);
+    box-shadow: 0 0 10px rgba(216,155,60,.25);
+}
+
+.campo::placeholder {
+    color: #806e5b;
+}
+
+.codigo {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+
+.botonSecundario {
+    margin-top: 10px;
+    background: #5a4030;
+    box-shadow: 0 5px 0 #352419;
+}
+
+.botonSecundario:hover {
+    background: #70503b;
+}
+
+.codigoLobby {
+    margin: 15px 0 25px;
+    padding: 15px;
+
+    background: #24160e;
+    border: 2px solid var(--ocre-claro);
+    border-radius: 14px;
+}
+
+.codigoLobby small {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #bda98b;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.codigoLobby strong {
+    display: block;
+
+    color: var(--dorado);
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+
+.listaJugadores {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.jugador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 14px;
+
+    background: rgba(0,0,0,.18);
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.jugador small {
+    margin-left: auto;
+    color: var(--dorado);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   CARTA DE ESTADO
+   ========================================================= */
+
+.estadoCarta {
+    margin: 15px auto 22px;
+    padding: 20px 18px;
+
+    max-width: 620px;
+
+    background:
+        linear-gradient(145deg, #4a3020, #2c1b11);
+
+    border: 2px solid var(--ocre);
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.4),
+        inset 0 0 15px rgba(255,255,255,.025);
+}
+
+.estadoCarta .iconoEstado {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+.estadoCarta h2 {
+    margin-bottom: 8px;
+    color: var(--dorado);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.estadoCarta p {
+    color: var(--texto-suave);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   TURNO / MENSAJES
+   ========================================================= */
+
+.turnoActual {
+    margin: 5px 0 12px;
+    color: #d7b982;
+    font-size: 14px;
+}
+
+.turnoActual strong {
+    color: var(--dorado);
+    font-size: 16px;
+}
+
+.esperando {
+    margin: 15px 0;
+    color: #9c8b74;
+    font-size: 13px;
+}
+
+/* =========================================================
+   TABLERO DE PICADAS
+   Cada .picada es una tabla de madera.
+   Dentro hay SIEMPRE 6 slots visibles.
+   ========================================================= */
+
+.picadas {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+
+    margin: 18px 0 30px;
+}
+
+/* Tabla */
+
+.picada {
+    position: relative;
+
+    min-width: 0;
+    padding: 14px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.025) 0%,
+            transparent 12%,
+            rgba(0,0,0,.07) 30%,
+            transparent 48%,
+            rgba(255,255,255,.02) 70%,
+            transparent 100%
+        ),
+        linear-gradient(145deg, #704322, #4a2a16 48%, #321b0f);
+
+    border: 3px solid #8f5c24;
+    border-radius: 18px;
+
+    box-shadow:
+        inset 0 0 0 2px rgba(255,208,113,.08),
+        inset 0 0 25px rgba(0,0,0,.35),
+        0 8px 18px rgba(0,0,0,.42);
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+/* Activa */
+
+.picada[style*="FFD071"] {
+    border-color: var(--dorado) !important;
+
+    box-shadow:
+        inset 0 0 0 2px rgba(255,208,113,.15),
+        inset 0 0 25px rgba(0,0,0,.35),
+        0 0 18px rgba(255,208,113,.18),
+        0 8px 20px rgba(0,0,0,.45);
+}
+
+/* Título */
+
+.picadaTitulo {
+    margin-bottom: 2px;
+
+    color: var(--dorado);
+
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    text-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+
+.picadaSubtitulo {
+    margin-bottom: 12px;
+    color: #c7a77c;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.picadaEstado {
+    color: #9a7445;
+    font-size: 11px;
+}
+
+/* =========================================================
+   6 HUECOS DE CADA TABLA
+   ========================================================= */
+
+.slotsPicada {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(92px, 1fr));
+
+    gap: 9px;
+
+    width: 100%;
+}
+
+/* Cavidad */
+
+.slotPicada {
+    position: relative;
+    min-width: 0;
+    min-height: 92px;
+
+    border-radius: 11px;
+}
+
+/* Cavidad vacía: aspecto de depresión tallada en la madera */
+
+.slotVacio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(12,6,3,.55) 0%,
+            rgba(28,13,7,.38) 55%,
+            rgba(100,57,25,.15) 100%
+        );
+
+    border: 2px solid rgba(31,15,7,.58);
+
+    box-shadow:
+        inset 0 4px 8px rgba(0,0,0,.38),
+        inset 0 -2px 3px rgba(255,183,75,.08);
+}
+
+.huecoMadera {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(222,170,91,.30);
+    font-size: 25px;
+    font-weight: 300;
+
+    border-radius: inherit;
+}
+
+.slotVacio:hover .huecoMadera {
+    color: rgba(255,208,113,.45);
+}
+
+/* =========================================================
+   CARTA JUGADA
+   ========================================================= */
+
+.cartaJugada {
+    width: 100%;
+    min-height: 92px;
+
+    padding: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(145deg, #54321e, #2d1a10);
+
+    border: 2px solid var(--carta-color, #b8863b);
+    border-radius: 9px;
+
+    box-shadow:
+        0 4px 8px rgba(0,0,0,.45),
+        inset 0 0 10px rgba(255,255,255,.025);
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        transform .16s ease,
+        box-shadow .16s ease,
+        filter .16s ease;
+}
+
+.cartaJugada:hover {
+    transform: translateY(-3px) scale(1.02);
+    filter: brightness(1.12);
+
+    box-shadow:
+        0 8px 14px rgba(0,0,0,.5),
+        0 0 10px var(--carta-color, #b8863b);
+}
+
+.jugadorCarta {
+    width: 100%;
+    margin-bottom: 3px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #d7b982;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.cartaJugada .iconoCarta {
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+
+    margin: 2px auto 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: 0;
+
+    font-size: 28px;
+}
+
+.cartaJugada .imagenCarta,
+.cartaJugada .iconoCarta img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.nombreCartaJugada {
+    max-width: 100%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #fff3d7;
+    font-size: 9px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* Contador */
+
+.contadorPicada {
+    margin-top: 9px;
+
+    color: #b99668;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+/* =========================================================
+   MANO DEL JUGADOR
+   ========================================================= */
+
+.zonaMano {
+    width: 100%;
+}
+
+.tituloSeccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.tituloSeccion h3 {
+    margin: 0;
+}
+
+.adornoTitulo {
+    color: #9b6b32;
+    font-size: 12px;
+}
+
+/*
+   IMPORTANTE:
+   La identidad de las cartas NO es A/B/C.
+   El JS puede seguir generando .letraCarta, pero
+   visualmente no se muestra.
+*/
+
+.letraCarta {
+    display: none !important;
+}
+
+.mano {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+
+    margin: 12px 0 20px;
+
+    align-items: stretch;
+}
+
+/* =========================================================
+   CARTAS DE LA MANO — TCG
+   ========================================================= */
+
+.cartaMano {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 310px;
+
+    padding: 9px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4c2d1a 0%,
+            #321e13 100%
+        );
+
+    border: 2px solid var(--carta-color, #9b6b32);
+    border-radius: 13px;
+
+    box-shadow:
+        0 7px 14px rgba(0,0,0,.42),
+        inset 0 0 0 1px rgba(255,255,255,.04);
+
+    cursor: pointer;
+    user-select: none;
+
+    text-align: center;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease,
+        filter .18s ease;
+}
+
+/* Hover: la carta se separa de la mesa */
+
+.cartaJugable:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--dorado);
+
+    box-shadow:
+        0 14px 24px rgba(0,0,0,.5),
+        0 0 14px rgba(255,208,113,.16);
+}
+
+/* Click */
+
+.cartaJugable:active {
+    transform: translateY(-2px) scale(.98);
+}
+
+/* =========================================================
+   ILUSTRACIÓN
+   ========================================================= */
+
+.cartaMano .iconoCarta {
+    width: 100%;
+    height: 125px;
+
+    margin: 15px 0 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(132,84,39,.50),
+            rgba(38,23,15,.92) 78%
+        );
+
+    border: 1px solid rgba(177,130,65,.65);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    font-size: 55px;
+}
+
+.cartaMano .iconoCarta img,
+.cartaMano .imagenCarta {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   NOMBRE
+   ========================================================= */
+
+.cartaMano h2 {
+    margin: 5px 3px 0;
+
+    color: #fff;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.05;
+
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+
+/* Separador */
+
+.cartaMano h2::after {
+    content: "";
+
+    display: block;
+
+    width: 72%;
+    height: 1px;
+
+    margin: 7px auto 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #9b6b32,
+            transparent
+        );
+}
+
+/* =========================================================
+   EFECTO
+   ========================================================= */
+
+.cartaMano p {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 3px 5px 5px;
+
+    color: #d9c5a7;
+
+    font-size: 11px;
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+/* =========================================================
+   RAREZA / PUNTOS
+   ========================================================= */
+
+.cartaMano small {
+    display: block;
+
+    margin-top: auto;
+    padding-top: 7px;
+
+    color: var(--dorado);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    border-top: 1px solid rgba(155,107,50,.55);
+}
+
+/* =========================================================
+   RAREZA — MANTENER IDENTIDAD VISUAL
+   ========================================================= */
+
+.cartaMano.comun {
+    border-color: #8d765d;
+}
+
+.cartaMano.rara {
+    border-color: #657a35;
+}
+
+.cartaMano.epica {
+    border-color: #8c5a88;
+
+    box-shadow:
+        0 7px 14px rgba(0,0,0,.42),
+        0 0 9px rgba(140,90,136,.13);
+}
+
+.cartaMano.legendaria {
+    border-color: #c28a32;
+
+    box-shadow:
+        0 7px 14px rgba(0,0,0,.42),
+        0 0 11px rgba(194,138,50,.16);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+    body {
+        padding: 14px;
+    }
+
+    .contenedor {
+        width: 100%;
+        min-height: calc(100vh - 28px);
+        padding: 24px 20px 28px;
+    }
+
+    .picadas {
+        gap: 10px;
+    }
+
+    .picada {
+        padding: 10px;
+    }
+
+    .slotsPicada {
+        gap: 6px;
+    }
+
+    .cartaMano {
+        min-height: 285px;
+        padding: 7px;
+    }
+
+    .cartaMano .iconoCarta {
+        height: 105px;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .picadas {
+        grid-template-columns: 1fr;
+    }
+
+    .picada {
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mano {
+        gap: 9px;
+    }
+
+    .cartaMano {
+        min-height: 270px;
+    }
+
+    .cartaMano .iconoCarta {
+        height: 95px;
+    }
+
+    .cartaMano .iconoCarta img,
+    .cartaMano .imagenCarta {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+
+    .contenedor {
+        padding: 20px 12px 24px;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .slotsPicada {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, 78px);
+    }
+
+    .slotPicada,
+    .slotVacio,
+    .cartaJugada {
+        min-height: 78px;
+    }
+
+    .cartaJugada .iconoCarta {
+        width: 32px;
+        height: 32px;
+        min-height: 32px;
+    }
+
+    .cartaJugada .iconoCarta img,
+    .cartaJugada .imagenCarta {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nombreCartaJugada {
+        font-size: 8px;
+    }
+
+    .mano {
+        gap: 6px;
+    }
+
+    .cartaMano {
+        min-height: 245px;
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    .cartaMano .iconoCarta {
+        height: 82px;
+        margin-top: 12px;
+    }
+
+    .cartaMano .iconoCarta img,
+    .cartaMano .imagenCarta {
+        width: 55px;
+        height: 55px;
+    }
+
+    .cartaMano h2 {
+        font-size: 12px;
+    }
+
+    .cartaMano p {
+        font-size: 9px;
+        line-height: 1.22;
+    }
+
+    .cartaMano small {
+        font-size: 8px;
+    }
+}

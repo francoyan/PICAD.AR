@@ -1,0 +1,191 @@
+[
+    {
+        "id": 1,
+        "nombre": "EL LECHERO",
+        "icono": "🧀",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un queso.",
+        "rareza": "Común",
+        "color": "#B97728"
+    },
+    {
+        "id": 2,
+        "nombre": "THE BUTCHER",
+        "icono": "🥩",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un corte de carne.",
+        "rareza": "Común",
+        "color": "#A84332"
+    },
+    {
+        "id": 3,
+        "nombre": "EL PANADERO",
+        "icono": "🥖",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir una panificación.",
+        "rareza": "Común",
+        "color": "#D49A3A"
+    },
+    {
+        "id": 4,
+        "nombre": "EL VIEJO SALADO",
+        "icono": "🐟",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un pescado o marisco.",
+        "rareza": "Rara",
+        "color": "#477B8C"
+    },
+    {
+        "id": 5,
+        "nombre": "EL CAZADOR",
+        "icono": "🏹",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir una carne de caza.",
+        "rareza": "Rara",
+        "color": "#596B3A"
+    },
+    {
+        "id": 6,
+        "nombre": "EL ACEITUNERO",
+        "icono": "🫒",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un tipo de aceituna.",
+        "rareza": "Común",
+        "color": "#657A35"
+    },
+    {
+        "id": 7,
+        "nombre": "EL MANICERO",
+        "icono": "🥜",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un fruto seco (por algo te tocó a vos).",
+        "rareza": "Común",
+        "color": "#A66A3F"
+    },
+    {
+        "id": 8,
+        "nombre": "PICKLE RICK",
+        "icono": "assets/icons/picklero.png",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un encurtido.",
+        "rareza": "Común",
+        "color": "#71934A"
+    },
+    {
+        "id": 9,
+        "nombre": "EL FIAMBRERO",
+        "icono": "🥓",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un fiambre.",
+        "rareza": "Común",
+        "color": "#A94B43"
+    },
+    {
+        "id": 10,
+        "nombre": "JOHN SALCHICHON",
+        "icono": "assets/icons/johnsalchichon.png",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un embutido.",
+        "rareza": "Común",
+        "color": "#9E4635"
+    },
+    {
+        "id": 11,
+        "nombre": "EL HORTELANO",
+        "icono": "🍅",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un vegetal para acompañar la picada.",
+        "rareza": "Común",
+        "color": "#7A8F45"
+    },
+    {
+        "id": 12,
+        "nombre": "EL PICANTE",
+        "icono": "🌶️",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir algo picante.",
+        "rareza": "Rara",
+        "color": "#B33A2E"
+    },
+    {
+        "id": 13,
+        "nombre": "EL DIPLOMÁTICO",
+        "icono": "🥣",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir una salsa o dip.",
+        "rareza": "Común",
+        "color": "#8B6548"
+    },
+    {
+        "id": 14,
+        "nombre": "EXTRAWURST",
+        "icono": "🌭",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un tipo de salchicha alemana.",
+        "rareza": "Rara",
+        "color": "#B56C3B"
+    },
+    {
+        "id": 15,
+        "nombre": "EL GOURMET",
+        "icono": "🍷",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un acompañamiento de categoría premium.",
+        "rareza": "Épica",
+        "color": "#7A4A70"
+    },
+    {
+        "id": 16,
+        "nombre": "EL CONTRABANDISTA",
+        "icono": "🧳",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un ingrediente que normalmente no estaría en una picada.",
+        "rareza": "Épica",
+        "color": "#68556E"
+    },
+    {
+        "id": 17,
+        "nombre": "EL MILLONARIO",
+        "icono": "💰",
+        "tipo": "Categoría",
+        "descripcion": "Elegí el ingrediente más caro que puedas justificar (sin que te pasen factura).",
+        "rareza": "Épica",
+        "color": "#A17C32"
+    },
+    {
+        "id": 18,
+        "nombre": "EL CORDOBÉS",
+        "icono": "🧉",
+        "tipo": "Categoría",
+        "descripcion": "Tenés que incorporar algo bien cordobés.",
+        "rareza": "Épica",
+        "color": "#6D5A3A"
+    },
+    {
+        "id": 19,
+        "nombre": "EL HAMBRIENTO",
+        "icono": "🍽️",
+        "tipo": "Categoría",
+        "descripcion": "Podés elegir dos ingredientes de calidad común de las otras picadas.",
+        "rareza": "Épica",
+        "color": "#8C5A3C"
+    },
+    {
+        "id": 20,
+        "nombre": "EL REY DE LA PICADA",
+        "icono": "👑",
+        "tipo": "Categoría",
+        "descripcion": "Elegí libremente cualquier ingrediente.",
+        "rareza": "Legendaria",
+        "color": "#B8862C"
+    },
+    {
+        "id": 21,
+        "nombre": "EL HUEVERO",
+        "icono": "🥚",
+        "tipo": "Categoría",
+        "descripcion": "Te toca elegir un huevo o una preparación a base de huevo.",
+        "rareza": "Rara",
+        "color": "#C9A64A"
+    }
+]

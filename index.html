@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Picad.AR</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#6b4528">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PICAD.AR">
+<body>
+
+    <div class="contenedor">
+
+        <h1>PICAD.AR</h1>
+
+        <p class="subtitulo">
+            El juego definitivo para construir la...
+            ¿mejor picada?
+        </p>
+
+
+        <div class="menu">
+
+            <button id="btnCrear">
+                🍻 Crear partida
+            </button>
+
+
+            <button id="btnUnirse">
+                🎲 Unirse
+            </button>
+
+
+            <button id="btnReglas">
+                📖 Reglas
+            </button>
+
+        </div>
+
+
+        <footer>
+            v0.0.4
+        </footer>
+
+    </div>
+
+
+    <!-- Socket.IO -->
+
+    <script src="/socket.io/socket.io.js"></script>
+
+
+    <!-- Nuestro JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
